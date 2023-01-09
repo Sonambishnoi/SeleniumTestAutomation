@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="5" name="PlaceOrder(failed)" parallel="tests">
+    <groups>
+      <run>
+        <include name="Purchase"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="tests.PlaceOrder">
+        <methods>
+          <include name="launchApplication"/>
+          <include name="tearDown"/>
+          <include name="order" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- tests.PlaceOrder -->
+    </classes>
+  </test> <!-- PlaceOrder(failed) -->
+  <test thread-count="5" name="Loginsampl(failed)" parallel="tests">
+    <groups>
+      <run>
+        <include name="Purchase"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="tests.Loginsampl">
+        <methods>
+          <include name="launchApplication"/>
+          <include name="order" invocation-numbers="0 1"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- tests.Loginsampl -->
+    </classes>
+  </test> <!-- Loginsampl(failed) -->
+</suite> <!-- Failed suite [Suite] -->

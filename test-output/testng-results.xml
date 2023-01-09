@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="15328" started-at="2023-01-09T11:26:10Z" finished-at="2023-01-09T11:26:25Z">
+    <groups>
+      <group name="Purchase">
+        <method signature="PlaceOrder.order(java.util.HashMap)[pri:0, instance:tests.PlaceOrder@3ba9ad43]" name="order" class="tests.PlaceOrder"/>
+        <method signature="Loginsampl.order(java.util.HashMap)[pri:0, instance:tests.Loginsampl@9353778]" name="order" class="tests.Loginsampl"/>
+      </group> <!-- Purchase -->
+    </groups>
+    <test name="Loginsampl" duration-ms="14792" started-at="2023-01-09T11:26:10Z" finished-at="2023-01-09T11:26:25Z">
+      <class name="tests.Loginsampl">
+        <test-method status="PASS" signature="launchApplication()[pri:0, instance:tests.Loginsampl@9353778]" name="launchApplication" is-config="true" duration-ms="3807" started-at="2023-01-09T11:26:10Z" finished-at="2023-01-09T11:26:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method status="PASS" signature="order(java.util.HashMap)[pri:0, instance:tests.Loginsampl@9353778]" name="order" duration-ms="3446" started-at="2023-01-09T11:26:14Z" data-provider="getData" finished-at="2023-01-09T11:26:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Denhaag@1988, product=ZARA COAT 3, email=sonam.bishnoi.jpr@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- order -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.Loginsampl@9353778]" name="tearDown" is-config="true" duration-ms="87" started-at="2023-01-09T11:26:17Z" finished-at="2023-01-09T11:26:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="launchApplication()[pri:0, instance:tests.Loginsampl@9353778]" name="launchApplication" is-config="true" duration-ms="3562" started-at="2023-01-09T11:26:17Z" finished-at="2023-01-09T11:26:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method status="PASS" signature="order(java.util.HashMap)[pri:0, instance:tests.Loginsampl@9353778]" name="order" duration-ms="3332" started-at="2023-01-09T11:26:21Z" data-provider="getData" finished-at="2023-01-09T11:26:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Denhaag@1988, product=ADIDAS ORIGINAL, email=sonam.bishnoi.nl@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- order -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.Loginsampl@9353778]" name="tearDown" is-config="true" duration-ms="379" started-at="2023-01-09T11:26:24Z" finished-at="2023-01-09T11:26:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.Loginsampl -->
+    </test> <!-- Loginsampl -->
+    <test name="PlaceOrder" duration-ms="15328" started-at="2023-01-09T11:26:10Z" finished-at="2023-01-09T11:26:25Z">
+      <class name="tests.PlaceOrder">
+        <test-method status="PASS" signature="launchApplication()[pri:0, instance:tests.PlaceOrder@3ba9ad43]" name="launchApplication" is-config="true" duration-ms="3799" started-at="2023-01-09T11:26:10Z" finished-at="2023-01-09T11:26:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method status="PASS" signature="order(java.util.HashMap)[pri:0, instance:tests.PlaceOrder@3ba9ad43]" name="order" duration-ms="3451" started-at="2023-01-09T11:26:14Z" data-provider="getData" finished-at="2023-01-09T11:26:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Denhaag@1988, product=ZARA COAT 3, email=sonam.bishnoi.jpr@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- order -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.PlaceOrder@3ba9ad43]" name="tearDown" is-config="true" duration-ms="134" started-at="2023-01-09T11:26:17Z" finished-at="2023-01-09T11:26:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="launchApplication()[pri:0, instance:tests.PlaceOrder@3ba9ad43]" name="launchApplication" is-config="true" duration-ms="3762" started-at="2023-01-09T11:26:17Z" finished-at="2023-01-09T11:26:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method status="PASS" signature="order(java.util.HashMap)[pri:0, instance:tests.PlaceOrder@3ba9ad43]" name="order" duration-ms="3750" started-at="2023-01-09T11:26:21Z" data-provider="getData" finished-at="2023-01-09T11:26:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Denhaag@1988, product=ADIDAS ORIGINAL, email=sonam.bishnoi.nl@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- order -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.PlaceOrder@3ba9ad43]" name="tearDown" is-config="true" duration-ms="252" started-at="2023-01-09T11:26:25Z" finished-at="2023-01-09T11:26:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.PlaceOrder -->
+    </test> <!-- PlaceOrder -->
+  </suite> <!-- Suite -->
+</testng-results>
