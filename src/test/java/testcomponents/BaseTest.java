@@ -28,7 +28,7 @@ public class BaseTest {
 	public LoginPage lp;
 
 	public WebDriver initializeDriver() throws IOException {
-   //just to check push is working fine
+ 
 		Properties prop = new Properties();
 		FileInputStream fis = new FileInputStream(
 				System.getProperty("user.dir") + "//src//main//java//resources//GlobalProperties.properties");

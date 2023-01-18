@@ -56,17 +56,42 @@
     <artifactId>extentreports</artifactId>
     <version>5.0.9</version>
 </dependency>
+<dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.24</version>
+            <optional>true</optional>
+</dependency>
 
     
   </dependencies>
 
+
+<profiles>
+  <profile>
+  <id>Regression</id>
+  
   <build>
-    <plugins>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
-        <version>3.0.0-M5</version>
+        <version>3.0.0-M6</version>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>testsuites/Regression.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
       </plugin>
-    </plugins>
-  </build>
-</project>
+      </plugins>
+       </pluginManagement>
+         </build>
+  
+  </profile>
+  
+   </profiles>
+   
+   
+   </project>
